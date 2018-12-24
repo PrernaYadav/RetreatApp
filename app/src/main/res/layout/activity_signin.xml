@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/retreat"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orangeblur"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".7">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Welcome"
+                android:textColor="@android:color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+            <!--    <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/roundcorneredittext"
+                    android:hint="Please Enter UserId"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:padding="10dp"/>-->
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/roundcorneredittext"
+                    android:hint="Enter Username"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundcorneredittext"
+                    android:hint="Enter Password"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black" />
+
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/colorAccent"
+                android:text="SignIn"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_notuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:text="Not a Member ? Signup now"
+                android:textColor="@android:color/white"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
